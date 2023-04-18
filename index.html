@@ -1,37 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Age calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <title>Frontend Mentor | Age calculator app</title>
+    </head>
+    <body>
+        <main class="container">
+            <form action="" id="form" class="form flex uppercase">
+                <div>
+                    <label for="day">day</label>
+                    <input
+                        type="number"
+                        name="day"
+                        id="day"
+                        placeholder="DD"
+                        onkeypress="if(this.value.length===2) return false;"
+                    />
+                    <div class="error capitalize" id="day-error"></div>
+                </div>
+                <div>
+                    <label for="month">month</label>
+                    <input
+                        type="number"
+                        name="month"
+                        id="month"
+                        placeholder="MM"
+                        onkeypress="if(this.value.length===2) return false;"
+                    />
+                    <div class="error capitalize" id="month-error"></div>
+                </div>
+                <div>
+                    <label for="year">year</label>
+                    <input
+                        type="number"
+                        name="year"
+                        id="year"
+                        placeholder="YYYY"
+                        onkeypress="if(this.value.length===4) return false;"
+                    />
+                    <div class="error capitalize" id="year-error"></div>
+                </div>
+            </form>
+            <hr />
+            <button
+                type="submit"
+                id="submit-btn"
+                class="submit-btn flex flex-center"
+            >
+                <img
+                    src="./assets/images/icon-arrow.svg"
+                    class="arrow-image"
+                    alt=""
+                />
+            </button>
+            <h1 class="years display"><span>__</span> years</h1>
+            <h1 class="months display"><span>__</span> months</h1>
+            <h1 class="days display"><span>__</span> days</h1>
+        </main>
+        <footer class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Yash Pathik</a>.
+        </footer>
+        <script src="./scripts/script.js"></script>
+    </body>
 </html>

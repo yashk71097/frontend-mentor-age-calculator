@@ -1,0 +1,261 @@
+/* -------------- */
+/* Default Values */
+/* -------------- */
+
+/* Box Sizing */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset default Margin and Padding */
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default body styles */
+
+body {
+    line-height: 1.5;
+    background-size: cover;
+    background-position: bottom;
+    background-color: var(--light-grey);
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+/* Images Setup */
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Form Element Setup */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Reset list style to none */
+
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+    list-style: none;
+}
+
+/* Reset lists padding */
+
+menu,
+ol,
+ul {
+    padding-left: 0;
+}
+
+/* Reset list markers */
+
+article ol,
+article ul {
+    list-style-position: inside;
+}
+
+/* Reset Cursor for Elements */
+
+label,
+button,
+select,
+summary,
+[type="radio"],
+[type="submit"],
+[type="checkbox"] {
+    cursor: pointer;
+}
+
+/* --------------- */
+/* Set Root Values */
+/* --------------- */
+
+:root {
+    --bg-color: #fff;
+    --purple: #854dff;
+    --light-grey: #f0f0f0;
+    --grey: #716f6f;
+    --line: #dcdcdc;
+    --red: #ff5959;
+}
+
+/* --------------- */
+/* Utility Classes */
+/* --------------- */
+
+/* Flex Container */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 2rem);
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Grid Container */
+
+.grid {
+    display: grid;
+    gap: var(--gap, 2rem);
+    height: 100vh;
+}
+
+/* TypeScripts */
+
+.text-white {
+    color: #ffffff;
+}
+
+.text-black {
+    color: #000000;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+/* -------------- */
+/* Custom Classes */
+/* -------------- */
+
+.container {
+    margin: 120px auto;
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom-right-radius: 150px;
+    background-color: white;
+}
+
+label {
+    color: var(--grey);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+input {
+    display: block;
+    width: 90%;
+    height: 50px;
+    padding: 10px 10px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+input::placeholder {
+    font-weight: bold;
+    color: var(--line);
+    letter-spacing: 1px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+.error {
+    font-size: 11px;
+    color: var(--red);
+    position: absolute;
+    width: 92px;
+}
+
+.form {
+    margin-bottom: 70px;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid var(--line);
+}
+
+.submit-btn {
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    border: none;
+    background-color: var(--purple);
+    position: relative;
+    bottom: 1.2rem;
+    left: 8.2rem;
+}
+
+.arrow-image {
+    width: 60%;
+}
+
+.display {
+    font-size: 50px;
+    font-style: italic;
+}
+
+.display span {
+    color: var(--purple);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--purple);
+}
+
+/* ------------- */
+/* Media Queries */
+/* ------------- */
+
+/* When the screen size increases than 767px */
+
+@media (min-width: 767px) {
+    .container {
+        width: 550px;
+    }
+
+    .error {
+        width: 150px;
+        font-size: 13px;
+    }
+
+    .submit-btn {
+        width: 80px;
+        bottom: 2.5rem;
+        left: 27rem;
+    }
+
+    .display {
+        font-size: 70px;
+    }
+}
