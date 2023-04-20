@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [https://www.frontendmentor.io/solutions/age-calculator-app-WkDsVdIzGs](https://www.frontendmentor.io/solutions/age-calculator-app-WkDsVdIzGs)
+-   Live Site URL: [https://calm-treacle-02c464.netlify.app](https://calm-treacle-02c464.netlify.app)
 
 ## My process
 
