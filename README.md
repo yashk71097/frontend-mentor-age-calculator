@@ -52,5 +52,5 @@ Users should be able to:
 ## Author
 
 -   Website - [Yash Pathik](https://www.your-site.com)
--   Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+-   Frontend Mentor - [@yashk71097](https://www.frontendmentor.io/profile/yashk71097)
 -   Twitter - [@yashk71097](https://www.twitter.com/yashk71097)
