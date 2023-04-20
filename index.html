@@ -22,7 +22,7 @@
         <main class="container">
             <form action="" id="form" class="form flex uppercase">
                 <div>
-                    <label for="day">day</label>
+                    <label class="day-label" for="day">day</label>
                     <input
                         type="number"
                         name="day"
@@ -33,7 +33,7 @@
                     <div class="error capitalize" id="day-error"></div>
                 </div>
                 <div>
-                    <label for="month">month</label>
+                    <label class="month-label" for="month">month</label>
                     <input
                         type="number"
                         name="month"
@@ -44,7 +44,7 @@
                     <div class="error capitalize" id="month-error"></div>
                 </div>
                 <div>
-                    <label for="year">year</label>
+                    <label class="year-label" for="year">year</label>
                     <input
                         type="number"
                         name="year"
@@ -54,22 +54,38 @@
                     />
                     <div class="error capitalize" id="year-error"></div>
                 </div>
+
+                <button
+                    type="submit"
+                    id="submit-btn"
+                    class="submit-btn flex flex-center"
+                >
+                    <img
+                        src="./assets/images/icon-arrow.svg"
+                        class="arrow-image"
+                        alt=""
+                    />
+                </button>
+                <button
+                    type="submit"
+                    id="reset-btn"
+                    class="reset-btn flex flex-center"
+                >
+                    <img
+                        src="./assets/images/refresh-icon.svg"
+                        class="reset-image"
+                        alt=""
+                    />
+                </button>
             </form>
             <hr />
-            <button
-                type="submit"
-                id="submit-btn"
-                class="submit-btn flex flex-center"
-            >
-                <img
-                    src="./assets/images/icon-arrow.svg"
-                    class="arrow-image"
-                    alt=""
-                />
-            </button>
-            <h1 class="years display"><span>__</span> years</h1>
-            <h1 class="months display"><span>__</span> months</h1>
-            <h1 class="days display"><span>__</span> days</h1>
+            <h1 class="display">
+                <span id="years" class="years">__</span> years
+            </h1>
+            <h1 class="display">
+                <span id="months" class="months">__</span> months
+            </h1>
+            <h1 class="display"><span id="days" class="days">__</span> days</h1>
         </main>
         <footer class="attribution">
             Challenge by
